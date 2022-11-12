@@ -1,0 +1,38 @@
+package quiz;
+import java.util.Scanner;
+
+public class Quiz {
+
+//explains if the age of an individual is odd or an even number 
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in); 
+       System.out.print("enter your current age ");
+       int age = reader.nextInt();
+
+       if(age % 2 == 0)
+            System.out.println("Your current age is even");
+        else
+            System.out.println("Your current age is odd ");
+       
+       
+       //counts characters of a string
+              int count = 0,i=0;
+              Scanner nm = new Scanner(System.in);
+       System.out.print("enter your name ");
+       String name = nm.nextLine();
+		do 
+		{
+           if(name.charAt(i)!=' ')
+           {
+           
+              count++;
+           }
+            i++;
+        }while(i<name.length());
+        
+        System.out.print("The total number of character is:"+count);
+       
+       
+    } 
+       
+    }
